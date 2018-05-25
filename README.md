@@ -1,2 +1,2 @@
 # pymeshb
-LibMeshb Python wrapper
+[libMeshb](https://github.com/LoicMarechal/libMeshb) Python wrapper.
