@@ -1,3 +1,5 @@
 build
 .pytest_cache/
 tests/__pycache__/
+dist/
+pymeshb.egg-info/
