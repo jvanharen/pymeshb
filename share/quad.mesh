@@ -1,0 +1,19 @@
+MeshVersionFormatted 3
+
+Dimension 3
+
+Vertices
+6
+0.    0.   0. 1
+1.72  0.   0. 2
+1.35  1.52 0. 3
+0.    1.62 0. 4
+2.13  0.   0. 5
+2.1   1.96 0. 6
+
+Quadrilaterals
+2
+1 2 3 4 1
+2 5 6 3 2
+
+End
