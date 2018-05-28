@@ -1,6 +1,6 @@
 # pymeshb
 
-[libMeshb](https://github.com/LoicMarechal/libMeshb) Python wrapper.
+[libMeshb](https://github.com/LoicMarechal/libMeshb) Python 2&3 wrapper.
 
 # Overview
 
@@ -9,6 +9,8 @@ to handle the \*.meshb file format. It is simply a Python wrapper
 of [libMeshb](https://github.com/LoicMarechal/libMeshb).
 
 # Installation
+
+## From the Python Package Index
 
 Please make sure that [numpy](http://www.numpy.org) is installed by typing
 
@@ -20,6 +22,15 @@ Index](https://pypi.org/project/pymeshb/), so simply type
     pip install -U pymeshb
 
 to install or upgrade.
+
+## From sources
+
+    pip install -U numpy
+    git clone https://github.com/jvanharen/pymeshb
+    cd pymeshb
+    git submodule init
+    git submodule update
+    python setup.py install
 
 # Usage
 

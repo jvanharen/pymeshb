@@ -17,7 +17,7 @@ pymeshb = Extension('pymeshb', ['libmeshb_wrap.c', libmeshb_c], depends=[libmesh
                     libmeshb_path, numpy.get_include()], extra_compile_args=["-DTRANSMESH"], )
 
 setuptools.setup(name='pymeshb',
-                 version='0.0.2',
+                 version='0.0.3',
                  url='https://github.com/jvanharen/pymeshb',
                  author='Julien Vanharen',
                  author_email='julien.vanharen@inria.fr',
@@ -26,7 +26,7 @@ setuptools.setup(name='pymeshb',
                  long_description_content_type='text/markdown',
                  ext_modules=[pymeshb],
                  packages=setuptools.find_packages(),
-                 install_requires=['numpy>=1.14.3'],
+                 install_requires=['numpy>=1.13.3'],
                  classifiers=["License :: OSI Approved :: MIT License",
                               'Operating System :: OS Independent',
                               'Programming Language :: Python',
