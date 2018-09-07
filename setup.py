@@ -15,7 +15,7 @@ pymeshb = Extension('pymeshb', ['libmeshb_wrap.c', libmeshb_c], include_dirs=[
                     libmeshb_path, numpy.get_include()], extra_compile_args=["-DTRANSMESH"], )
 
 setup(name='pymeshb',
-      version='0.0.4',
+      version='0.0.6',
       url='https://github.com/jvanharen/pymeshb',
       author='Julien Vanharen',
       author_email='julien.vanharen@inria.fr',
