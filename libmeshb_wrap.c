@@ -394,8 +394,6 @@ static PyObject *pymeshb_write_msh(PyObject *in, char *Out, int Ver) {
         // --- Allow the Python garbage collector to free these arrays. --- //
         Py_DECREF(NpyIntTab);
         Py_DECREF(NpyDblTab);
-        Py_DECREF(NpyIntTabDim);
-        Py_DECREF(NpyDblTabDim);
       }
       if (PyArray_Check(val)) {
         typ = PyArray_TYPE((PyArrayObject *)val);
@@ -413,7 +411,6 @@ static PyObject *pymeshb_write_msh(PyObject *in, char *Out, int Ver) {
           }
           // --- Allow the Python garbage collector to free these arrays. --- //
           Py_DECREF(NpyIntTab);
-          Py_DECREF(NpyIntTabDim);
           break;
         case NPY_DOUBLE:
           NpyDblTab = (PyArrayObject *)PyArray_FROM_OTF(val, NPY_DOUBLE,
@@ -428,7 +425,6 @@ static PyObject *pymeshb_write_msh(PyObject *in, char *Out, int Ver) {
           }
           // --- Allow the Python garbage collector to free these arrays. --- //
           Py_DECREF(NpyDblTab);
-          Py_DECREF(NpyDblTabDim);
           break;
         default:
           PyErr_SetString(PyExc_RuntimeError, "Unknown type of array.");
@@ -562,8 +558,6 @@ static PyObject *pymeshb_write_sol(PyObject *in, char *Out, int Ver) {
           // --- Allow the Python garbage collector to free these arrays. --- //
           Py_DECREF(NpyIntTab);
           Py_DECREF(NpyDblTab);
-          Py_DECREF(NpyIntTabDim);
-          Py_DECREF(NpyDblTabDim);
         }
         if (PyArray_Check(val)) {
           typ = PyArray_TYPE((PyArrayObject *)val);
